@@ -3,10 +3,13 @@ body {
     margin: 0;
     min-height: 100vh;
     display: flex;
-    justify-content: center; 
-    align-items: center;    
+    justify-content: center;
+    align-items: center;
     font-family: sans-serif;
 }
+
+
+/* ESTILOS CREAR CUENTA */
 
 form {
     width: 100%;
@@ -18,11 +21,11 @@ form {
     background-color: #B0D5A9;
     border: none;
     padding: 10px 25px;
-    border-radius: 10px; 
+    border-radius: 10px;
     cursor: pointer;
     margin-top: 15px;
     font-weight: bold;
-    text-align: center; 
+    text-align: center;
 }
 
 #titulo {
@@ -33,9 +36,9 @@ form {
 
 .caja {
     background-color: #e7f4e5;
-    width: 90%;          
+    width: 90%;
     max-width: 420px;
-    margin: 0 auto;       
+    margin: 0 auto;
     padding: 25px;
     border: 2px solid #cbc7be;
     border-radius: 8px;
@@ -43,10 +46,9 @@ form {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
 }
-
 
 .caja div {
     display: flex;
@@ -54,21 +56,94 @@ form {
     align-items: center;
     width: 100%;
     margin-bottom: 12px;
-    
 }
-
 
 .caja label {
     text-align: left;
-    flex: 1; 
+    flex: 1;
     font-size: 14px;
 }
-
 
 .caja input {
     flex: 1.2;
     padding: 6px;
-    text-align: center; 
+    text-align: center;
     border: 1px solid #667663;
     border-radius: 4px;
+}
+
+
+/* ESTILOS ARTÍCULOS */
+
+.articulos-main {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.articulos-main h1 {
+    color: #667663;
+    margin-bottom: 10px;
+}
+
+.articulos-container {
+    display: grid;
+    gap: 25px;
+    margin-top: 30px;
+    text-align: left;
+}
+
+.articulo-card {
+    background-color: #ffffff;
+    border: 2px solid #667663;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.articulo-card:hover {
+    transform: translateY(-5px);
+}
+
+.articulo-img {
+    background-color: #F7F3EA;
+    font-size: 3.5em;
+    padding: 25px;
+    text-align: center;
+    border-bottom: 2px solid #667663;
+}
+
+.articulo-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.articulo-content h3 {
+    color: #667663;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.15em;
+}
+
+.articulo-content p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.leer-mas {
+    text-decoration: none;
+    color: #667663;
+    font-weight: bold;
+    font-size: 14px;
+    display: inline-block;
+}
+
+.leer-mas:hover {
+    color: #9ec597;
+    text-decoration: underline;
 }

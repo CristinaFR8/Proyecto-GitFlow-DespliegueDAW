@@ -1,0 +1,91 @@
+.contact-card {
+    background-color: #000000;
+    padding: 50px;
+    border-radius: 40px 40px 0 0;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 900px;
+    margin: 50px auto;
+    box-sizing: border-box;
+}
+
+
+.contact-card h2 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+}
+
+.two-columns {
+    display: flex;
+    gap: 60px;
+}
+
+.form-side,
+.info-side {
+    flex: 1;
+}
+
+.form-side {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+.split-inputs {
+    width: 100%;
+}
+
+
+.form-side input,
+.form-side textarea {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 3px;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+
+.form-side button {
+    background-color: #fce029;
+    color: #333;
+    border: none;
+    padding: 15px 30px;
+    font-weight: bold;
+    cursor: pointer;
+    align-self: flex-start;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+
+.form-side button:hover {
+    background-color: #e5cb18;
+}
+
+
+.info-side {
+    padding-top: 20px;
+}
+
+.info-side h3 {
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.info-side p {
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.info-side ul {
+    padding-left: 20px;
+}
+
+.info-side li {
+    margin-bottom: 8px;
+}
