@@ -147,3 +147,117 @@ form {
     color: #9ec597;
     text-decoration: underline;
 }
+
+
+/* ESTILO CONTACT US*/
+
+/* Ensure HTML and Body take full height */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Main wrapper to fill the screen */
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Full-page contact section */
+.contact-page {
+    background-color: #000000;
+    width: 100%;
+    flex: 1;
+    padding: 60px 10%;
+    color: white;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-page h2 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+}
+
+.two-columns {
+    display: flex;
+    gap: 80px;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.form-side,
+.info-side {
+    flex: 1;
+}
+
+.form-side {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.split-inputs {
+    width: 100%;
+}
+
+.form-side input,
+.form-side textarea {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 3px;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+.form-side button {
+    background-color: #fce029;
+    color: #333;
+    border: none;
+    padding: 15px 30px;
+    font-weight: bold;
+    cursor: pointer;
+    align-self: flex-start;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+
+.form-side button:hover {
+    background-color: #e5cb18;
+}
+
+.info-side {
+    padding-top: 10px;
+}
+
+.info-side h3 {
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.info-side p {
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.info-side ul {
+    padding-left: 20px;
+}
+
+.info-side li {
+    margin-bottom: 8px;
+}
