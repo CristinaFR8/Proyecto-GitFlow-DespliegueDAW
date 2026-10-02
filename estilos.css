@@ -1,3 +1,79 @@
+body {
+    background-color: #F7F3EA;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+
+/* ESTILOS CREAR CUENTA */
+
+form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#crear_cuenta {
+    background-color: #B0D5A9;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#titulo {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.caja {
+    background-color: #e7f4e5;
+    width: 90%;
+    max-width: 420px;
+    margin: 0 auto;
+    padding: 25px;
+    border: 2px solid #cbc7be;
+    border-radius: 8px;
+    font-family: sans-serif;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.caja div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+.caja label {
+    text-align: left;
+    flex: 1;
+    font-size: 14px;
+}
+
+.caja input {
+    flex: 1.2;
+    padding: 6px;
+    text-align: center;
+    border: 1px solid #667663;
+    border-radius: 4px;
+}
+
+
+/* ESTILOS ARTÍCULOS */
 
 .articulos-main {
     max-width: 1100px;
