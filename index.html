@@ -1,100 +1,103 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>CanguPet · Inicio</title>
-<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="estilos.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CanguPet · Cuidado de mascotas a domicilio</title>
+    <meta name="description" content="Cuidamos de tu perro o tu gato en casa cuando tú no puedes. Personas cercanas y de confianza, con fotos y resumen tras cada visita. Pide tu primera visita.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="estilos.css">
 </head>
 
 <body>
 
-<header>
-  <div class="bar">
+    <header>
+        <div class="bar">
 
-    <a class="brand" href="index.html" aria-label="CanguPet, ir al inicio">
-      <span>
-        <b>CanguPet</b>
-        <small>Cuidado de mascotas a domicilio</small>
-      </span>
-    </a>
+            <a class="brand" href="index.html">
+                <img src="imagenes/cangupet-frase.svg" alt="CanguPet, cuidado de mascotas a domicilio" width="240" height="76">
+            </a>
 
-    <nav aria-label="Principal">
-      <a class="on" href="index.html" aria-current="page">INICIO</a>
-      <a href="servicios.html">SERVICIOS</a>
-      <a href="contacto.html">CONTACTO</a>
-      <a href="articulos.html">ARTÍCULOS</a>
-      <a href="conocenos.html">CONÓCENOS</a>
-      <a href="cuenta.html">CUENTA</a>
-    </nav>
+            <nav aria-label="Principal">
+                <a class="on" href="index.html" aria-current="page">INICIO</a>
+                <a href="servicio/servicio.html">SERVICIOS</a>
+                <a href="contact/contact.html">CONTACTO</a>
+                <a href="articulo.html">ARTÍCULOS</a>
+                <a href="conocenos.html">CONÓCENOS</a>
+                <a href="crearCuenta/cuenta.html">CUENTA</a>
+            </nav>
 
-  </div>
-</header>
+        </div>
+    </header>
 
 
-<main>
+    <main>
 
-  <div class="hero">
+        <section class="hero">
 
-    <div>
-      <h1>Tu mascota, feliz y cuidada en casa</h1>
+            <div class="hero-texto">
+                <h1>Cuidamos de tu mascota cuando tú no puedes hacerlo</h1>
 
-      <p>
-        Cuidamos de tu perro, gato o conejo cuando tú no puedes estar.
-        Nos encargamos de sus paseos, alimentación y compañía,
-        respetando siempre sus rutinas y necesidades.
-      </p>
+                <p>
+                    Cuidadores de confianza en casa de tu mascota. Sin cambios en
+                    sus rutinas y con fotos de cada visita.
+                </p>
 
-      <a class="btn" href="contacto.html">
-        Pide tu primera visita
-      </a>
-    </div>
+                <a class="btn" href="contact/contact.html">Pide tu primera visita</a>
+            </div>
 
-  </div>
+            <img class="hero-foto"
+                 src="imagenes/foto-inicio.jpg"
+                 alt="Cuidadora sonriente sentada en casa con un gato en brazos mientras acaricia a un perro blanco"
+                 width="2048" height="1365">
 
-
-  <h2>Todo lo que necesitas para cuidar de los tuyos</h2>
-
-  <div class="grid">
-
-    <div class="card">
-      <h2>En su entorno habitual</h2>
-
-      <p>
-        Tu mascota puede quedarse en casa, rodeada de sus cosas
-        y manteniendo sus rutinas sin cambios innecesarios.
-      </p>
-    </div>
+        </section>
 
 
-    <div class="card">
-      <h2>Siempre informado</h2>
+        <section aria-labelledby="ventajas">
+            <h2 id="ventajas">Todo lo que necesitas para cuidar de los tuyos</h2>
 
-      <p>
-        Recibe fotos y un pequeño resumen después de cada visita
-        para saber cómo está y cómo ha ido el día.
-      </p>
-    </div>
+            <div class="grid">
+
+                <article class="card">
+                    <h3>En su entorno habitual</h3>
+                    <p>
+                        Tu mascota puede quedarse en casa, rodeada de sus cosas
+                        y manteniendo sus rutinas sin cambios innecesarios.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>Siempre informado</h3>
+                    <p>
+                        Recibe fotos y un pequeño resumen después de cada visita
+                        para saber cómo está y cómo ha ido el día.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>Cuidado de confianza</h3>
+                    <p>
+                        Personas responsables y amantes de los animales que
+                        cuidarán de tu mascota con atención y cariño.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+    </main>
 
 
-    <div class="card">
-      <h2>Cuidado de confianza</h2>
-
-      <p>
-        Personas responsables y amantes de los animales que
-        cuidarán de tu mascota con atención y cariño.
-      </p>
-    </div>
-
-  </div>
-
-</main>
-
-
-<footer>
-  © 2026 <b>CanguPet</b> · Cuidado de mascotas a domicilio · Versión 1.0 de la web
-</footer>
+    <footer>
+        © 2026 <b>CanguPet</b> · Cuidado de mascotas a domicilio
+    </footer>
 
 </body>
+
 </html>

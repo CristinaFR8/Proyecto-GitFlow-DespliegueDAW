@@ -1,3 +1,218 @@
+/* ================================================================
+   estilos.css — Hoja de estilos compartida del proyecto
+   ================================================================
+   Fichero común a todas las páginas del proyecto.
+   Cada sección contiene los estilos correspondientes a cada parte.
+   ================================================================ */
+
+
+/* ----------------------------------------------------------------
+   1. ESTILOS GENERALES
+   ---------------------------------------------------------------- */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html,
+body {
+    min-height: 100%;
+}
+
+body {
+    background-color: #F7F3EA;
+    min-height: 100vh;
+    font-family: "Nunito", "Trebuchet MS", sans-serif;
+    color: #354535;
+    line-height: 1.6;
+}
+
+main {
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 2rem 1.2rem 3rem;
+}
+
+h1 {
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    line-height: 1.1;
+    font-weight: 800;
+    color: #6B8E6B;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 0.6rem;
+}
+
+p {
+    max-width: 62ch;
+}
+
+
+/* ----------------------------------------------------------------
+   2. CABECERA Y NAVEGACIÓN
+   ---------------------------------------------------------------- */
+
+header {
+    background-color: #FFFFFF;
+    border-bottom: 3px solid #A8C3A0;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+
+.bar {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0.7rem 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.brand img {
+    width: 240px;
+    height: auto;
+    display: block;
+}
+
+nav {
+    display: flex;
+    gap: 0.3rem;
+    flex-wrap: wrap;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 0.85rem;
+    padding: 0.45rem 0.8rem;
+    border-radius: 999px;
+    color: #354535;
+}
+
+nav a:hover {
+    background-color: #F7F3EA;
+}
+
+nav a.on {
+    background-color: #6B8E6B;
+    color: #FFFFFF;
+}
+
+
+/* ----------------------------------------------------------------
+   3. PIE DE PÁGINA (footer)
+   ---------------------------------------------------------------- */
+
+footer {
+    background-color: #354535;
+    color: #F7F3EA;
+    text-align: center;
+    padding: 1.4rem 1rem;
+    font-size: 0.9rem;
+}
+
+footer b {
+    color: #A8C3A0;
+}
+
+
+/* ----------------------------------------------------------------
+   4. ESTILOS ESPECÍFICOS DE CADA PÁGINA
+   ---------------------------------------------------------------- */
+
+
+/* --- Página: index.html --- */
+
+.hero {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 2.5rem;
+    align-items: center;
+    padding: 3rem 0 4rem;
+}
+
+.hero h1 {
+    max-width: none;
+    margin-bottom: 1rem;
+}
+
+.hero h2 {
+    max-width: 700px;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    max-width: 650px;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+}
+
+.hero-foto {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 22px;
+    display: block;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #6B8E6B;
+    color: #FFFFFF;
+    font: inherit;
+    font-weight: 800;
+    padding: 0.7rem 1.4rem;
+    border-radius: 999px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #354535;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.2rem;
+    margin: 1.5rem 0;
+}
+
+.card {
+    background-color: #FFFFFF;
+    border-radius: 22px;
+    padding: 1.4rem;
+    border-top: 6px solid #A8C3A0;
+}
+
+.card:nth-child(3n + 2) {
+    border-color: #E8B7B7;
+}
+
+.card:nth-child(3n) {
+    border-color: #B9A7C9;
+}
+
+.card p {
+    font-size: 0.95rem;
+}
+
+
+/* --- Página: articulo.html --- */
 
 .articulos-main {
     max-width: 1100px;
@@ -70,4 +285,30 @@
 .leer-mas:hover {
     color: #9ec597;
     text-decoration: underline;
+}
+
+
+/* ----------------------------------------------------------------
+   5. DISEÑO RESPONSIVE
+   ---------------------------------------------------------------- */
+
+@media (max-width: 760px) {
+
+    .bar {
+        justify-content: center;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    .brand img {
+        width: 210px;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 2rem 0 3rem;
+    }
 }
