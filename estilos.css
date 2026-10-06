@@ -518,3 +518,28 @@ form {
         margin-top: 5px;
     }
 }
+
+/*
+ 10. btn_volver a inicio
+*/
+.volver-container {
+    display: flex;
+    align-items: center;
+}
+
+.btn-volver {
+    display: inline-block;
+    background-color: #B0D5A9; 
+    color: #354535;            
+    font-weight: bold;
+    font-size: 0.9rem;
+    padding: 8px 18px;
+    border-radius: 20px;       
+    text-decoration: none;     
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.btn-volver:hover {
+    background-color: #9ec597;
+    transform: scale(1.03);   
+}
