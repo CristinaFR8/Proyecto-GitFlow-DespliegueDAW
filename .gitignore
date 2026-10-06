@@ -1,0 +1,9 @@
+# Visual Studio Code
+.vscode/
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Node
+node_modules/
