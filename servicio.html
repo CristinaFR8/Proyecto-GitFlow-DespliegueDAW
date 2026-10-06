@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CanguPet - Nuestros Servicios</title>
+    <link rel="stylesheet" href="estilos.css">
+     <script src="servicios.js" defer></script>
+</head>
+<body>
+
+    <main class="servicios-main">
+        <h1>Nuestros Servicios de Cuidado</h1>
+        <p class="subtitle">Cuidamos de tu mascota con amor y profesionalidad cuando tú no puedes.</p>
+
+        <div class="filter-container">
+            <button class="filter-btn active" data-filter="all">Todos</button>
+            <button class="filter-btn" data-filter="paseo">Paseos</button>
+            <button class="filter-btn" data-filter="domicilio">A Domicilio</button>
+        </div>
+
+        <div class="servicios-container">
+            
+            <article class="servicio-card" data-category="paseo">
+                <h3>Paseo Diario</h3>
+                <p>Paseos activos y seguros adaptados a las necesidades y energía de tu perro. Ideal para mantenerlos felices</p>
+                <div class="precio">Desde 20€</div>
+                <button class="detalle-btn">Reservar Servicio</button>
+            </article>
+
+            <article class="servicio-card" data-category="domicilio">
+                <h3>Cuidado a Domicilio</h3>
+                <p>Nos desplazamos a tu hogar para alimentar, jugar y cuidar de tus mascotas en su propio entorno.</p>
+                <div class="precio">Tarifa personalizada</div>
+                <button class="detalle-btn">Reservar Servicio</button>
+            </article>
+
+            <article class="servicio-card" data-category="domicilio">
+                <h3>Cuidado de Pequeñas Mascotas</h3>
+                <p>Alimentación, limpieza y atención especializada para conejos, roedores y otras mascotas de pequeño tamaño.</p>
+                <div class="precio">Oferta 2º día al 50%</div>
+                <button class="detalle-btn">Reservar Servicio</button>
+            </article>
+
+            <article class="servicio-card" data-category="paseo">
+                <h3>Pack Primera Reserva</h3>
+                <p>Es tu primera vez con nosotros? Disfruta de un descuento especial para que pruebes nuestros servicios con total confianza.</p>
+                <div class="precio">10% de Descuento</div>
+                <button class="detalle-btn">Aprovechar Oferta</button>
+            </article>
+
+        </div>
+    </main>
+</body>
+</html>
