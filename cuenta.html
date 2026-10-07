@@ -1,26 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro</title>
+    <title>Registro - CanguPet</title>
     <link rel="stylesheet" href="estilos.css">
     <script src="script.js" defer></script>
 </head>
+
 <body>
+
+    <header>
+        <div class="bar">
+
+            <a class="brand" href="index.html">
+                <img src="imagenes/cangupet-frase.svg"
+                    alt="CanguPet, cuidado de mascotas a domicilio"
+                    width="240"
+                    height="76">
+            </a>
+
+            <nav aria-label="Principal">
+                <a href="index.html">INICIO</a>
+                <a href="servicio.html">SERVICIOS</a>
+                <a href="contact.html">CONTACTO</a>
+                <a href="articulo.html">ARTÍCULOS</a>
+                <a href="conocenos.html">CONÓCENOS</a>
+                <a class="on" href="cuenta.html" aria-current="page">CUENTA</a>
+            </nav>
+
+        </div>
+    </header>
+
     <form>
         <fieldset class="caja">
             <legend id="titulo">Crear cuenta</legend>
-        <label for= "nombre" >Nombre de usuario</label>
-        <input type="text" id="nombre" placeholder="Astrid_molina88"><br>
-        <label for="correo">Correo</label>
-        <input type="email" id="correo" placeholder="astMol8844@gmail.com"><br>
-        <label for="contraseña">Contraseña</label>
-        <input type="password" id="contraseña"><br>
-        <label for="confirm">Confirma la contraseña</label>
-        <input type="password" id="confirm"><br>
-        <button type="submit" id="crear_cuenta">Crear</button>
+
+            <label for="nombre">Nombre de usuario</label>
+            <input type="text" id="nombre" placeholder="Astrid_molina88"><br>
+
+            <label for="correo">Correo</label>
+            <input type="email" id="correo" placeholder="astMol8844@gmail.com"><br>
+
+            <label for="contraseña">Contraseña</label>
+            <input type="password" id="contraseña"><br>
+
+            <label for="confirm">Confirma la contraseña</label>
+            <input type="password" id="confirm"><br>
+
+            <button type="submit" id="crear_cuenta">Crear</button>
         </fieldset>
     </form>
+
 </body>
+
 </html>
