@@ -1,26 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro</title>
+
+    <title>Registro - CanguPet</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="estilos.css">
-    <script src="script.js" defer></script>
+    <script src="scrip.js" defer></script>
 </head>
+
 <body>
-    <form>
-        <fieldset class="caja">
-            <legend id="titulo">Crear cuenta</legend>
-        <label for= "nombre" >Nombre de usuario</label>
-        <input type="text" id="nombre" placeholder="Astrid_molina88"><br>
-        <label for="correo">Correo</label>
-        <input type="email" id="correo" placeholder="astMol8844@gmail.com"><br>
-        <label for="contraseña">Contraseña</label>
-        <input type="password" id="contraseña"><br>
-        <label for="confirm">Confirma la contraseña</label>
-        <input type="password" id="confirm"><br>
-        <button type="submit" id="crear_cuenta">Crear</button>
-        </fieldset>
-    </form>
+
+    <div class="top-banner" id="topBanner">
+        <span>
+            <strong>¡Oferta CanguPet!</strong>
+            Consigue un 10% de descuento en tu primera reserva.
+        </span>
+
+        <button class="banner-close"
+            onclick="document.getElementById('topBanner').style.display='none'"
+            aria-label="Cerrar aviso">
+            ✕
+        </button>
+    </div>
+
+    <header>
+        <div class="bar">
+
+            <a class="brand" href="index.html">
+                <img src="imagenes/cangupet-frase.svg"
+                    alt="CanguPet, cuidado de mascotas a domicilio"
+                    width="240"
+                    height="76">
+            </a>
+
+            <nav aria-label="Principal">
+                <a href="index.html">INICIO</a>
+                <a href="servicio.html">SERVICIOS</a>
+                <a href="contact.html">CONTACTO</a>
+                <a href="opiniones.html">OPINIONES</a>
+                <a href="articulo.html">ARTÍCULOS</a>
+                <a href="conocenos.html">CONÓCENOS</a>
+                <a class="on" href="cuenta.html" aria-current="page">CUENTA</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+
+        <div class="registro-container">
+
+            <form>
+                <fieldset class="caja">
+
+                    <legend id="titulo">Crear cuenta</legend>
+
+                    <label for="nombre">Nombre de usuario</label>
+                    <input type="text" id="nombre" placeholder="Astrid_molina88"><br>
+
+                    <label for="correo">Correo</label>
+                    <input type="email" id="correo" placeholder="astMol8844@gmail.com"><br>
+
+                    <label for="contraseña">Contraseña</label>
+                    <input type="password" id="contraseña"><br>
+
+                    <label for="confirm">Confirma la contraseña</label>
+                    <input type="password" id="confirm"><br>
+
+                    <button type="submit" id="crear_cuenta">Crear</button>
+
+                </fieldset>
+            </form>
+
+        </div>
+
+    </main>
+
+    <footer>
+        © 2026 <b>CanguPet</b> · Cuidado de mascotas a domicilio · v1.0.0
+    </footer>
+
 </body>
+
 </html>

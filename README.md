@@ -1,13 +1,35 @@
-
 # Proyecto GitFlow - Despliegue DAW
 
 Proyecto colaborativo realizado para practicar Git, GitFlow, GitHub, GitHub Pages y el trabajo en equipo mediante Pull Requests.
+
+## Proyecto
+
+**CanguPet** es una página web dedicada al cuidado de mascotas a domicilio. El proyecto ofrece información sobre los servicios de cuidado, artículos, contacto, creación de cuenta y presentación de la empresa.
 
 ## Integrantes
 
 * Cristina Fernández
 * Astrid Molina
 * Abdullah Riaz
+
+## Estructura del proyecto
+
+Actualmente el proyecto contiene:
+
+- `index.html` — Página de inicio.
+- `conocenos.html` — Página Conócenos.
+- `servicio.html` — Página de servicios.
+- `contact.html` — Página de contacto.
+- `articulo.html` — Página de artículos.
+- `opiniones.html` — Página de opiniones.
+- `cuenta.html` — Página de creación de cuenta.
+- `estilos.css` — Hoja de estilos común.
+- `imagenes/` — Imágenes y recursos gráficos del proyecto.
+- `script.js` — JavaScript general del proyecto.
+- `servicios.js` — JavaScript relacionado con la lógica de los servicios.
+- `opiniones.js` — JavaScript para el filtrado y envío de reseñas.
+- `README.md` — Documentación del proyecto.
+- `.gitignore` — Archivos excluidos del control de versiones.
 
 ## Tecnologías
 
@@ -32,23 +54,64 @@ El proyecto utiliza GitFlow para organizar el desarrollo mediante diferentes tip
 
 Las nuevas funcionalidades se desarrollan en ramas `feature/*` creadas a partir de `develop`.
 
-Cuando una funcionalidad está terminada, se crea una Pull Request hacia `develop`, donde otro integrante del equipo revisa los cambios.
+Cuando una funcionalidad está terminada, se crea una Pull Request hacia `develop`, donde otro integrante del equipo revisa y aprueba los cambios.
 
-Las versiones preparadas mediante `release/*` se incorporan a `main` y `develop`.
+Las versiones preparadas mediante `release/*` se incorporan a `main` y `develop` mediante Pull Requests.
 
-Las correcciones urgentes mediante `hotfix/*` se incorporan a `main` y `develop`.
+Las correcciones urgentes mediante `hotfix/*` se incorporan a `main` y `develop` mediante Pull Requests.
 
 ## Despliegue
 
-El proyecto se publica mediante GitHub Pages.
+El proyecto se publica mediante GitHub Pages desde la rama `main`.
 
-La rama `main` contiene la versión estable que se utiliza para el despliegue.
+**Web publicada:**  
+[CanguPet en GitHub Pages](https://cristinafr8.github.io/Proyecto-GitFlow-DespliegueDAW/?utm_source=chatgpt.com)
 
-## Estructura inicial
+## Versiones
 
-El proyecto contiene inicialmente:
+### v1.0.0
 
-* `index.html`
-* `estilos.css`
-* `README.md`
-* `.gitignore`
+Primera versión estable publicada de CanguPet.
+
+Incluye las páginas y funcionalidades completadas durante la primera sesión de desarrollo y publicadas mediante GitHub Pages.
+
+**Tag:** `v1.0.0`
+### v2.0.0
+
+Segunda versión publicada de CanguPet con mejoras visuales e interactivas.
+
+- Rediseño e integración de botones de retorno al inicio.
+- Implementación del banner superior de ofertas y avisos interactivo.
+- Incorporación de etiquetas (badges) flotantes para destacar servicios.
+- Botón flotante de contacto/asistencia directa.
+- Creación de la vista e interactividad para la sección de Opiniones (`opiniones.html`).
+
+**Tag:** `v2.0.0`
+
+## Incidencias y correcciones
+### v1
+
+Durante el desarrollo se realizaron correcciones y ajustes mediante ramas y Pull Requests.
+
+Entre las correcciones realizadas para la primera versión se encuentran:
+
+* Corrección de la estructura HTML de `index.html`.
+* Corrección del enlace hacia la página de contacto.
+* Inclusión de la versión `v1.0.0` en el pie de página.
+
+### v2
+- Resolución de conflictos en la hoja de estilos compartida `estilos.css` entre ramas.
+- Corrección de rutas de navegación en el menú del `header`.
+- Ajuste de posicionamiento CSS en los badges de las tarjetas para evitar el solapamiento con los títulos.
+
+## Kanban
+
+La planificación y seguimiento de las tareas del proyecto se realiza mediante un tablero Kanban de GitHub Projects.
+
+**Tablero Kanban:**  
+[Tablero Kanban de GitHub Projects](https://github.com/users/CristinaFR8/projects/1/views/1?utm_source=chatgpt.com)
+
+## GitHub
+
+**Repositorio:**  
+[Repositorio de CanguPet en GitHub](https://github.com/CristinaFR8/Proyecto-GitFlow-DespliegueDAW?utm_source=chatgpt.com)

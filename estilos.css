@@ -1,9 +1,10 @@
 /* ================================================================
-   estilos.css — Hoja de estilos unificada de CanguPet
+   estilos.css — Hoja de estilos de CanguPet
    ================================================================ */
 
+
 /* ----------------------------------------------------------------
-   1. ESTILOS GENERALES Y RESET
+   1. ESTILOS GENERALES
    ---------------------------------------------------------------- */
 
 * {
@@ -48,16 +49,21 @@ h2 {
     margin-bottom: 0.6rem;
 }
 
+h3 {
+    font-weight: 800;
+}
+
 p {
     max-width: 62ch;
 }
 
 
 /* ----------------------------------------------------------------
-   2. CABECERA Y NAVEGACIÓN (COMPARTIDA)
+   2. CABECERA Y NAVEGACIÓN
    ---------------------------------------------------------------- */
 
-header, .site-header {
+header,
+.site-header {
     background-color: #FFFFFF;
     border-bottom: 3px solid #A8C3A0;
     position: sticky;
@@ -89,14 +95,16 @@ header, .site-header {
     display: block;
 }
 
-nav, .nav-links {
+nav,
+.nav-links {
     display: flex;
     gap: 0.3rem;
     flex-wrap: wrap;
     align-items: center;
 }
 
-nav a, .nav-links a {
+nav a,
+.nav-links a {
     text-decoration: none;
     font-weight: 800;
     font-size: 0.85rem;
@@ -106,18 +114,21 @@ nav a, .nav-links a {
     transition: background-color 0.2s, color 0.2s;
 }
 
-nav a:hover, .nav-links a:hover {
+nav a:hover,
+.nav-links a:hover {
     background-color: #F7F3EA;
 }
 
-nav a.on, nav a.active, .nav-links a.active {
+nav a.on,
+nav a.active,
+.nav-links a.active {
     background-color: #6B8E6B;
     color: #FFFFFF;
 }
 
 
 /* ----------------------------------------------------------------
-   3. PIE DE PÁGINA (FOOTER)
+   3. FOOTER
    ---------------------------------------------------------------- */
 
 footer {
@@ -135,7 +146,71 @@ footer b {
 
 
 /* ----------------------------------------------------------------
-   4. SECCIÓN: INICIO (INDEX)
+   4. BANNER SUPERIOR
+   ---------------------------------------------------------------- */
+
+.top-banner {
+    background-color: #6B8E6B;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 8px 15px;
+    font-size: 0.88rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+}
+
+.top-banner span {
+    margin: 0 auto;
+}
+
+.banner-close {
+    position: absolute;
+    right: 15px;
+    background: transparent;
+    border: none;
+    color: #FFFFFF;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 800;
+    padding: 0 5px;
+    line-height: 1;
+    transition: opacity 0.2s;
+}
+
+.banner-close:hover {
+    opacity: 0.7;
+}
+
+
+/* ----------------------------------------------------------------
+   5. BOTONES GENERALES
+   ---------------------------------------------------------------- */
+
+.btn {
+    display: inline-block;
+    background-color: #6B8E6B;
+    color: #FFFFFF;
+    font: inherit;
+    font-weight: 800;
+    padding: 0.7rem 1.4rem;
+    border-radius: 999px;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.btn:hover {
+    background-color: #354535;
+    transform: translateY(-1px);
+}
+
+
+/* ----------------------------------------------------------------
+   6. INICIO
    ---------------------------------------------------------------- */
 
 .hero {
@@ -148,11 +223,6 @@ footer b {
 
 .hero h1 {
     max-width: none;
-    margin-bottom: 1rem;
-}
-
-.hero h2 {
-    max-width: 700px;
     margin-bottom: 1rem;
 }
 
@@ -171,21 +241,6 @@ footer b {
     display: block;
 }
 
-.btn {
-    display: inline-block;
-    background-color: #6B8E6B;
-    color: #FFFFFF;
-    font: inherit;
-    font-weight: 800;
-    padding: 0.7rem 1.4rem;
-    border-radius: 999px;
-    text-decoration: none;
-}
-
-.btn:hover {
-    background-color: #354535;
-}
-
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -198,6 +253,7 @@ footer b {
     border-radius: 22px;
     padding: 1.4rem;
     border-top: 6px solid #A8C3A0;
+    position: relative;
 }
 
 .card:nth-child(3n + 2) {
@@ -214,7 +270,7 @@ footer b {
 
 
 /* ----------------------------------------------------------------
-   5. SECCIÓN: CREAR CUENTA (REGISTRO)
+   7. CREAR CUENTA
    ---------------------------------------------------------------- */
 
 .registro-container {
@@ -225,33 +281,38 @@ footer b {
     padding: 20px 0;
 }
 
+.registro-container form {
+    width: 100%;
+}
+
 form {
     width: 100%;
-    display: flex;
-    justify-content: center;
 }
 
 .caja {
     background-color: #FFFFFF;
     width: 100%;
     max-width: 440px;
-    padding: 30px;
-    border: 2px solid #667663;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(102, 118, 99, 0.15);
+    margin: 0 auto;
+    padding: 2rem;
+    border: none;
+    border-top: 6px solid #A8C3A0;
+    border-radius: 22px;
+    box-shadow: 0 4px 12px rgba(53, 69, 53, 0.08);
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 #titulo {
-    font-weight: bold;
-    font-size: 1.3em;
-    color: #667663;
+    font-weight: 800;
+    font-size: 1.3rem;
+    color: #6B8E6B;
     padding: 0 10px;
 }
 
-.form-group, .caja div {
+.form-group,
+.caja div {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -262,126 +323,207 @@ form {
 .caja label {
     text-align: left;
     flex: 1;
-    font-size: 13px;
-    color: #333;
-    font-weight: bold;
+    font-size: 0.85rem;
+    color: #354535;
+    font-weight: 800;
 }
 
 .caja input {
     flex: 1.2;
-    padding: 8px;
+    padding: 0.7rem;
     text-align: left;
-    border: 1px solid #667663;
-    border-radius: 6px;
-    font-size: 14px;
-    box-sizing: border-box;
-    background-color: #faf8f5;
+    border: 1px solid #A8C3A0;
+    border-radius: 10px;
+    font: inherit;
+    font-size: 0.9rem;
+    background-color: #F7F3EA;
+    color: #354535;
+}
+
+.caja input:focus {
+    outline: 2px solid #6B8E6B;
+    border-color: #6B8E6B;
 }
 
 #crear_cuenta {
-    background-color: #B0D5A9;
+    background-color: #6B8E6B;
     border: none;
-    padding: 12px 30px;
-    border-radius: 25px;
+    padding: 0.7rem 1.8rem;
+    border-radius: 999px;
     cursor: pointer;
-    font-weight: bold;
-    color: #2c352a;
-    font-size: 15px;
+    font-weight: 800;
+    color: #FFFFFF;
+    font-size: 0.95rem;
     margin-top: 10px;
     transition: background-color 0.2s, transform 0.1s;
 }
 
 #crear_cuenta:hover {
-    background-color: #9ec597;
-    transform: scale(1.02);
+    background-color: #354535;
+    transform: translateY(-1px);
 }
 
 
 /* ----------------------------------------------------------------
-   6. SECCIÓN: SERVICIOS
+   8. SERVICIOS
    ---------------------------------------------------------------- */
 
 .servicios-main {
     max-width: 1000px;
-    margin: 20px auto;
+    margin: 0 auto;
     text-align: center;
+}
+
+.servicios-main h1 {
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 30px;
 }
 
 .filter-container {
     margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
 }
 
 .filter-btn {
-    background-color: #ffffff;
-    border: 2px solid #667663;
-    color: #667663;
-    padding: 8px 18px;
-    margin: 0 5px;
-    border-radius: 20px;
+    background-color: #FFFFFF;
+    border: 2px solid #A8C3A0;
+    color: #354535;
+    padding: 0.5rem 1rem;
+    margin: 0;
+    border-radius: 999px;
     cursor: pointer;
-    font-weight: bold;
-    transition: all 0.2s;
+    font: inherit;
+    font-weight: 800;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s;
 }
 
-.filter-btn.active, .filter-btn:hover {
-    background-color: #667663;
-    color: #ffffff;
+.filter-btn.active,
+.filter-btn:hover {
+    background-color: #6B8E6B;
+    border-color: #6B8E6B;
+    color: #FFFFFF;
 }
 
 .servicios-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 25px;
+    gap: 1.2rem;
 }
 
 .servicio-card {
-    background-color: #ffffff;
-    border: 2px solid #667663;
-    border-radius: 12px;
-    padding: 25px;
+    background-color: #FFFFFF;
+    border: none;
+    border-top: 6px solid #A8C3A0;
+    border-radius: 22px;
+    padding: 2rem 1.4rem 1.4rem;
     text-align: center;
-    box-shadow: 0 4px 10px rgba(102, 118, 99, 0.1);
+    box-shadow: 0 4px 12px rgba(53, 69, 53, 0.08);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    position: relative;
+}
+
+.servicio-card:nth-child(3n + 2) {
+    border-color: #E8B7B7;
+}
+
+.servicio-card:nth-child(3n) {
+    border-color: #B9A7C9;
+}
+
+.servicio-card h3 {
+    margin-bottom: 0.7rem;
+}
+
+.servicio-card p {
+    max-width: 100%;
+    margin-bottom: 1rem;
 }
 
 .servicio-card.hidden {
     display: none;
 }
 
+.precio {
+    font-weight: 800;
+    color: #6B8E6B;
+    margin-bottom: 1rem;
+}
+
+.detalle-btn {
+    align-self: center;
+    background-color: #6B8E6B;
+    color: #FFFFFF;
+    border: none;
+    padding: 0.7rem 1.2rem;
+    border-radius: 999px;
+    cursor: pointer;
+    font: inherit;
+    font-weight: 800;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.detalle-btn:hover {
+    background-color: #354535;
+    transform: translateY(-1px);
+}
+
 
 /* ----------------------------------------------------------------
-   7. SECCIÓN: ARTÍCULOS
+   9. ARTÍCULOS
    ---------------------------------------------------------------- */
 
 .articulos-main {
-    max-width: 1100px;
-    margin: 20px auto;
+    max-width: 1080px;
+    margin: 0 auto;
     text-align: center;
+}
+
+.articulos-main h1 {
+    margin-bottom: 0.5rem;
 }
 
 .articulos-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 25px;
+    gap: 1.2rem;
     margin-top: 30px;
     text-align: left;
 }
 
 .articulo-card {
-    background-color: #ffffff;
-    border: 2px solid #667663;
-    border-radius: 12px;
+    background-color: #FFFFFF;
+    border: none;
+    border-top: 6px solid #A8C3A0;
+    border-radius: 22px;
     overflow: hidden;
-    box-shadow: 0 4px 10px rgba(102, 118, 99, 0.1);
+    box-shadow: 0 4px 12px rgba(53, 69, 53, 0.08);
     display: flex;
     flex-direction: column;
-    transition: transform 0.2s;
+    transition: transform 0.2s, box-shadow 0.2s;
+    position: relative;
+}
+
+.articulo-card:nth-child(3n + 2) {
+    border-color: #E8B7B7;
+}
+
+.articulo-card:nth-child(3n) {
+    border-color: #B9A7C9;
 }
 
 .articulo-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 18px rgba(53, 69, 53, 0.12);
 }
 
 .articulo-img {
@@ -389,40 +531,49 @@ form {
     font-size: 3.5em;
     padding: 25px;
     text-align: center;
-    border-bottom: 2px solid #667663;
+    border-bottom: 2px solid #A8C3A0;
 }
 
 .articulo-content {
-    padding: 20px;
+    padding: 1.4rem;
     display: flex;
     flex-direction: column;
     flex-grow: 1;
 }
 
+.articulo-content h3 {
+    margin-bottom: 0.7rem;
+}
+
+.articulo-content p {
+    max-width: 100%;
+    margin-bottom: 1rem;
+}
+
 .leer-mas {
     text-decoration: none;
-    color: #667663;
-    font-weight: bold;
-    font-size: 14px;
+    color: #6B8E6B;
+    font-weight: 800;
+    font-size: 0.9rem;
+    margin-top: auto;
 }
 
 .leer-mas:hover {
-    color: #9ec597;
+    color: #354535;
     text-decoration: underline;
 }
 
 
 /* ----------------------------------------------------------------
-   8. SECCIÓN: CONTACTO (CONTACT US)
+   10. CONTACTO
    ---------------------------------------------------------------- */
 
 .contact-page {
-    background-color: #354535; /* Ajustado del negro al verde oscuro institucional */
+    background-color: #354535;
     width: 100%;
-    border-radius: 12px;
-    padding: 40px 5%;
-    color: white;
-    box-sizing: border-box;
+    border-radius: 22px;
+    padding: 2.5rem 5%;
+    color: #FFFFFF;
 }
 
 .contact-page h2 {
@@ -439,7 +590,8 @@ form {
     width: 100%;
 }
 
-.form-side, .info-side {
+.form-side,
+.info-side {
     flex: 1;
 }
 
@@ -449,29 +601,43 @@ form {
     gap: 15px;
 }
 
-.form-side input, .form-side textarea {
+.form-side label {
+    font-weight: 800;
+    margin-bottom: 0.3rem;
+}
+
+.form-side input,
+.form-side textarea {
     width: 100%;
-    padding: 12px;
+    padding: 0.75rem;
     border: none;
-    border-radius: 6px;
-    box-sizing: border-box;
-    font-family: inherit;
+    border-radius: 10px;
+    font: inherit;
+    color: #354535;
+    background-color: #FFFFFF;
+}
+
+.form-side input:focus,
+.form-side textarea:focus {
+    outline: 2px solid #A8C3A0;
 }
 
 .form-side button {
-    background-color: #B0D5A9;
+    background-color: #A8C3A0;
     color: #354535;
     border: none;
-    padding: 12px 25px;
-    font-weight: bold;
+    padding: 0.7rem 1.4rem;
+    font: inherit;
+    font-weight: 800;
     cursor: pointer;
     align-self: flex-start;
-    border-radius: 20px;
-    transition: background-color 0.2s;
+    border-radius: 999px;
+    transition: background-color 0.2s, transform 0.1s;
 }
 
 .form-side button:hover {
-    background-color: #9ec597;
+    background-color: #FFFFFF;
+    transform: translateY(-1px);
 }
 
 .info-side h3 {
@@ -479,18 +645,408 @@ form {
     margin-bottom: 10px;
 }
 
+.info-side p {
+    max-width: 100%;
+}
+
 
 /* ----------------------------------------------------------------
-   9. DISEÑO RESPONSIVO (MEDIA QUERIES)
+   11. CONÓCENOS
+   ---------------------------------------------------------------- */
+
+.conocenos-main {
+    max-width: 1000px;
+}
+
+
+/* INTRODUCCIÓN */
+
+.conocenos-intro {
+    background-color: #FFFFFF;
+    border-radius: 22px;
+    padding: 2.5rem 3rem;
+    margin-bottom: 2rem;
+    border-top: 6px solid #A8C3A0;
+    box-shadow: 0 4px 12px rgba(53, 69, 53, 0.08);
+}
+
+
+/* TÍTULO + LOGO */
+
+.conocenos-intro-cabecera {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 1.8rem;
+}
+
+.conocenos-intro-cabecera h1 {
+    margin: 0;
+}
+
+.conocenos-logo {
+    width: 100px;
+    height: auto;
+    display: block;
+}
+
+
+/* TEXTO + IMAGEN */
+
+.conocenos-intro-contenido {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 2.5rem;
+    align-items: center;
+}
+
+.conocenos-intro-texto {
+    display: flex;
+    flex-direction: column;
+}
+
+.conocenos-intro-texto p {
+    max-width: 100%;
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+.destacado {
+    font-size: 1.2rem;
+    color: #6B8E6B;
+    margin-bottom: 1.2rem !important;
+}
+
+
+/* IMAGEN */
+
+.conocenos-imagen {
+    width: 300px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 18px;
+    display: block;
+}
+
+
+/* DOS COLUMNAS */
+
+.conocenos-columnas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.conocenos-columnas section {
+    background-color: #FFFFFF;
+    border-radius: 22px;
+    padding: 2.2rem 2.5rem;
+    box-shadow: 0 4px 12px rgba(53, 69, 53, 0.08);
+}
+
+.conocenos-columnas h2 {
+    color: #6B8E6B;
+    margin-bottom: 1rem;
+}
+
+.conocenos-columnas p {
+    max-width: 100%;
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+.frase-final {
+    color: #6B8E6B;
+    margin-top: 1.5rem;
+}
+
+
+/* REX Y KOBU */
+
+.conocenos-mascotas {
+    background-color: #FFFFFF;
+    border-radius: 22px;
+    padding: 2.5rem 3rem;
+    box-shadow: 0 4px 12px rgba(53, 69, 53, 0.08);
+}
+
+.conocenos-mascotas > h2 {
+    color: #6B8E6B;
+    margin-bottom: 1rem;
+}
+
+.conocenos-mascotas > p {
+    max-width: 100%;
+    margin-bottom: 1.5rem;
+    text-align: justify;
+}
+
+.mascotas-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.mascota-card {
+    background-color: #F7F3EA;
+    border-radius: 18px;
+    overflow: hidden;
+    border-top: 5px solid #A8C3A0;
+}
+
+.mascota-card:nth-child(2) {
+    border-color: #B9A7C9;
+}
+
+.mascota-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    display: block;
+}
+
+.mascota-info {
+    padding: 1.3rem 1.5rem 1.5rem;
+}
+
+.mascota-info h3 {
+    color: #354535;
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+}
+
+.mascota-info p {
+    max-width: 100%;
+    margin: 0;
+    text-align: justify;
+}
+
+
+/* ----------------------------------------------------------------
+   12. OPINIONES
+   ---------------------------------------------------------------- */
+
+.opiniones-main {
+    max-width: 1080px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.opiniones-main h1 {
+    margin-bottom: 0.5rem;
+}
+
+.opiniones-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.2rem;
+    margin-top: 30px;
+    text-align: left;
+}
+
+.opinion-card {
+    background-color: #FFFFFF;
+    border: none;
+    border-top: 6px solid #A8C3A0;
+    border-radius: 22px;
+    padding: 1.4rem;
+    box-shadow: 0 4px 12px rgba(53, 69, 53, 0.08);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.opinion-card:nth-child(3n + 2) {
+    border-color: #E8B7B7;
+}
+
+.opinion-card:nth-child(3n) {
+    border-color: #B9A7C9;
+}
+
+.opinion-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 18px rgba(53, 69, 53, 0.12);
+}
+
+.opinion-card .stars {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+}
+
+.opinion-card .comentario {
+    font-size: 0.95rem;
+    color: #354535;
+    font-style: italic;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    flex-grow: 1;
+    max-width: 100%;
+}
+
+.autor-info {
+    border-top: 1px solid #A8C3A0;
+    padding-top: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.autor-nombre {
+    font-weight: 800;
+    color: #354535;
+    font-size: 0.95rem;
+}
+
+.mascota-tag {
+    font-size: 0.8rem;
+    color: #6B8E6B;
+    font-weight: 600;
+}
+
+.opinion-card.hidden {
+    display: none;
+}
+
+
+/* FORMULARIO DE OPINIONES */
+
+.nueva-opinion-section {
+    margin: 60px auto 0;
+    background-color: #FFFFFF;
+    border: none;
+    border-top: 6px solid #B9A7C9;
+    border-radius: 22px;
+    padding: 30px;
+    max-width: 600px;
+    box-shadow: 0 4px 12px rgba(53, 69, 53, 0.08);
+}
+
+.nueva-opinion-section h2 {
+    color: #6B8E6B;
+}
+
+.caja-opinion {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.caja-opinion .form-group {
+    display: block;
+    margin-bottom: 0;
+}
+
+.caja-opinion label {
+    font-weight: 800;
+    font-size: 0.9rem;
+    color: #354535;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.caja-opinion input,
+.caja-opinion textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #A8C3A0;
+    border-radius: 10px;
+    background-color: #F7F3EA;
+    font-family: inherit;
+    color: #354535;
+    box-sizing: border-box;
+}
+
+.caja-opinion input:focus,
+.caja-opinion textarea:focus {
+    outline: 2px solid #6B8E6B;
+    border-color: #6B8E6B;
+}
+
+.caja-opinion textarea {
+    resize: vertical;
+}
+
+
+/* ----------------------------------------------------------------
+   13. ETIQUETAS DE SERVICIOS
+   ---------------------------------------------------------------- */
+
+.badge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background-color: #A8C3A0;
+    color: #354535;
+    font-size: 0.72rem;
+    font-weight: 800;
+    padding: 4px 10px;
+    border-radius: 999px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+
+/* ----------------------------------------------------------------
+   14. BOTÓN VOLVER A INICIO
+   ---------------------------------------------------------------- */
+
+.volver-container {
+    display: flex;
+    align-items: center;
+}
+
+.btn-volver {
+    display: inline-block;
+    background-color: #A8C3A0;
+    color: #354535;
+    font-weight: 800;
+    font-size: 0.9rem;
+    padding: 8px 18px;
+    border-radius: 999px;
+    text-decoration: none;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.btn-volver:hover {
+    background-color: #6B8E6B;
+    color: #FFFFFF;
+    transform: translateY(-1px);
+}
+
+
+/* ----------------------------------------------------------------
+   15. RESPONSIVE
    ---------------------------------------------------------------- */
 
 @media (max-width: 760px) {
+
+    main {
+        padding: 1.5rem 1rem 2.5rem;
+    }
+
+    header,
+    .site-header {
+        padding: 8px 10px;
+    }
+
     .bar {
+        justify-content: center;
+        padding: 0.5rem;
+    }
+
+    nav,
+    .nav-links {
         justify-content: center;
     }
 
-    nav, .nav-links {
-        justify-content: center;
+    nav a,
+    .nav-links a {
+        font-size: 0.78rem;
+        padding: 0.4rem 0.65rem;
     }
 
     .brand img {
@@ -503,12 +1059,21 @@ form {
         padding: 2rem 0 3rem;
     }
 
+    .hero-foto {
+        order: 2;
+    }
+
     .two-columns {
         flex-direction: column;
         gap: 30px;
     }
 
-    .form-group, .caja div {
+    .contact-page {
+        padding: 2rem 1.2rem;
+    }
+
+    .form-group,
+    .caja div {
         flex-direction: column;
         align-items: flex-start;
     }
@@ -516,5 +1081,113 @@ form {
     .caja input {
         width: 100%;
         margin-top: 5px;
+    }
+
+    .filter-container {
+        gap: 0.4rem;
+    }
+
+    .filter-btn {
+        font-size: 0.85rem;
+    }
+
+
+    /* CONÓCENOS */
+
+    .conocenos-intro,
+    .conocenos-columnas section,
+    .conocenos-mascotas {
+        padding: 1.5rem;
+    }
+
+    .conocenos-intro-cabecera {
+        gap: 1rem;
+    }
+
+    .conocenos-intro-cabecera h1 {
+        font-size: 2rem;
+    }
+
+    .conocenos-logo {
+        width: 80px;
+    }
+
+    .conocenos-intro-contenido {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .conocenos-imagen {
+        width: 100%;
+        height: 220px;
+    }
+
+    .conocenos-columnas {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .mascotas-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .mascota-card img {
+        height: 240px;
+    }
+
+
+    /* OPINIONES */
+
+    .nueva-opinion-section {
+        padding: 1.5rem;
+    }
+
+
+    /* CUENTA */
+
+    .caja {
+        padding: 1.5rem;
+    }
+}
+
+
+/* ----------------------------------------------------------------
+   16. PANTALLAS MUY PEQUEÑAS
+   ---------------------------------------------------------------- */
+
+@media (max-width: 480px) {
+
+    .brand img {
+        width: 190px;
+    }
+
+    nav a,
+    .nav-links a {
+        font-size: 0.72rem;
+        padding: 0.35rem 0.5rem;
+    }
+
+    .top-banner {
+        padding: 8px 35px 8px 10px;
+        font-size: 0.8rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .contact-page {
+        border-radius: 18px;
+    }
+
+    .servicios-container,
+    .articulos-container,
+    .opiniones-grid {
+        grid-template-columns: 1fr;
     }
 }
