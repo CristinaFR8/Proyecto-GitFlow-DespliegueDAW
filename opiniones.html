@@ -1,108 +1,228 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>CanguPet - Opiniones de Clientes</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="estilos.css">
 </head>
+
 <body>
+
+    <div class="top-banner" id="topBanner">
+        <span>
+            <strong>¡Oferta CanguPet!</strong>
+            Consigue un 10% de descuento en tu primera reserva.
+        </span>
+
+        <button class="banner-close"
+            onclick="document.getElementById('topBanner').style.display='none'"
+            aria-label="Cerrar aviso">
+            ✕
+        </button>
+    </div>
 
     <header>
         <div class="bar">
+
             <a class="brand" href="index.html">
-                <img src="imagenes/cangupet-frase.svg" alt="CanguPet, cuidado de mascotas a domicilio" width="240" height="76">
+                <img src="imagenes/cangupet-frase.svg"
+                    alt="CanguPet, cuidado de mascotas a domicilio"
+                    width="240"
+                    height="76">
             </a>
 
-            <div class="volver-container">
-                <a href="index.html" class="btn-volver">← Volver a Inicio</a>
-            </div>
+            <nav aria-label="Principal">
+                <a href="index.html">INICIO</a>
+                <a href="servicio.html">SERVICIOS</a>
+                <a href="contact.html">CONTACTO</a>
+                <a class="on" href="opiniones.html" aria-current="page">OPINIONES</a>
+                <a href="articulo.html">ARTÍCULOS</a>
+                <a href="conocenos.html">CONÓCENOS</a>
+                <a href="cuenta.html">CUENTA</a>
+            </nav>
+
         </div>
     </header>
 
     <main class="opiniones-main">
+
         <h1>Que piensas sobre CanguPet</h1>
-        <p class="subtitle">Descubre las experiencias de otras familias que confían en nosotros para el cuidado de sus compañeros.</p>
+
+        <p class="subtitle">
+            Descubre las experiencias de otras familias que confían en nosotros
+            para el cuidado de sus compañeros.
+        </p>
 
         <!-- Filtros de Opiniones -->
+
         <div class="filter-container">
-            <button class="filter-btn active" data-filter="todos">General</button>
-            <button class="filter-btn" data-filter="perros"> Perros</button>
-            <button class="filter-btn" data-filter="gatos"> Gatos</button>
-            <button class="filter-btn" data-filter="otros"> Otras Mascotas</button>
+
+            <button class="filter-btn active" data-filter="todos">
+                General
+            </button>
+
+            <button class="filter-btn" data-filter="perros">
+                Perros
+            </button>
+
+            <button class="filter-btn" data-filter="gatos">
+                Gatos
+            </button>
+
+            <button class="filter-btn" data-filter="otros">
+                Otras Mascotas
+            </button>
+
         </div>
 
         <!-- Cuadro de Reseñas -->
+
         <div class="opiniones-grid">
-            
+
             <article class="opinion-card" data-category="gatos">
+
                 <div class="stars">⭐⭐⭐⭐⭐</div>
-                <p class="comentario">"Dejé a mi gato Luna durante el fin de semana y me enviaban fotos y vídeos tras cada visita. ¡Súper recomendados, nos dio muchísima tranquilidad!"</p>
+
+                <p class="comentario">
+                    "Dejé a mi gato Luna durante el fin de semana y me enviaban
+                    fotos y vídeos tras cada visita. ¡Súper recomendados, nos dio
+                    muchísima tranquilidad!"
+                </p>
+
                 <div class="autor-info">
                     <span class="autor-nombre">Laura G.</span>
                     <span class="mascota-tag">Dueña de Luna (Gato)</span>
                 </div>
+
             </article>
 
             <article class="opinion-card" data-category="perros">
+
                 <div class="stars">⭐⭐⭐⭐⭐</div>
-                <p class="comentario">"El servicio de paseo diario para Rocky es impecable. Llega a casa feliz, cansado y súper bien atendido."</p>
+
+                <p class="comentario">
+                    "El servicio de paseo diario para Rocky es impecable. Llega a
+                    casa feliz, cansado y súper bien atendido."
+                </p>
+
                 <div class="autor-info">
                     <span class="autor-nombre">Carlos M.</span>
                     <span class="mascota-tag">Dueño de Rocky (Perro)</span>
                 </div>
+
             </article>
 
             <article class="opinion-card" data-category="otros">
+
                 <div class="stars">⭐⭐⭐⭐⭐</div>
-                <p class="comentario">"Encontrar a alguien capacitado para cuidar conejos no es fácil, pero en CanguPet entendieron sus rutinas a la perfección desde el primer día."</p>
+
+                <p class="comentario">
+                    "Encontrar a alguien capacitado para cuidar conejos no es fácil,
+                    pero en CanguPet entendieron sus rutinas a la perfección desde
+                    el primer día."
+                </p>
+
                 <div class="autor-info">
                     <span class="autor-nombre">Marta R.</span>
                     <span class="mascota-tag">Dueña de Tambor (Conejo)</span>
                 </div>
+
             </article>
 
             <article class="opinion-card" data-category="perros">
+
                 <div class="stars">⭐⭐⭐⭐⭐</div>
-                <p class="comentario">"Aproveché la oferta del 10% en mi primera reserva y repetiré seguro. Trato muy cercano y profesional."</p>
+
+                <p class="comentario">
+                    "Aproveché la oferta del 10% en mi primera reserva y repetiré
+                    seguro. Trato muy cercano y profesional."
+                </p>
+
                 <div class="autor-info">
                     <span class="autor-nombre">Javier P.</span>
                     <span class="mascota-tag">Dueño de Thor (Perro)</span>
                 </div>
+
             </article>
 
         </div>
 
         <!-- Formulario para Dejar Opinión -->
+
         <section class="nueva-opinion-section">
-            <h2>¿Has probado nuestros servicios? </h2>
-            <p>Cuéntanos tu experiencia y ayuda a otras familias de mascotas.</p>
-            
+
+            <h2>¿Has probado nuestros servicios?</h2>
+
+            <p>
+                Cuéntanos tu experiencia y ayuda a otras familias de mascotas.
+            </p>
+
             <form id="formOpinion" class="caja-opinion">
+
                 <div class="form-group">
-                    <label for="nombreCliente">Tu Nombre</label>
-                    <input type="text" id="nombreCliente" placeholder="Ej. Ana María" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="nombreMascota">Nombre y tipo de mascota</label>
-                    <input type="text" id="nombreMascota" placeholder="Ej. Bony (Perro)" required>
+
+                    <label for="nombreCliente">
+                        Tu Nombre
+                    </label>
+
+                    <input type="text"
+                        id="nombreCliente"
+                        placeholder="Ej. Ana María"
+                        required>
+
                 </div>
 
                 <div class="form-group">
-                    <label for="textoOpinion">Tu Comentario</label>
-                    <textarea id="textoOpinion" rows="4" placeholder="Escribe tu reseña aquí..." required></textarea>
+
+                    <label for="nombreMascota">
+                        Nombre y tipo de mascota
+                    </label>
+
+                    <input type="text"
+                        id="nombreMascota"
+                        placeholder="Ej. Bony (Perro)"
+                        required>
+
                 </div>
 
-                <button type="submit" class="btn">Enviar Reseña</button>
+                <div class="form-group">
+
+                    <label for="textoOpinion">
+                        Tu Comentario
+                    </label>
+
+                    <textarea id="textoOpinion"
+                        rows="4"
+                        placeholder="Escribe tu reseña aquí..."
+                        required></textarea>
+
+                </div>
+
+                <button type="submit" class="btn">
+                    Enviar Reseña
+                </button>
+
             </form>
+
         </section>
+
     </main>
 
     <footer>
-        © 2026 <b>CanguPet</b> · Cuidado de mascotas a domicilio
+        © 2026 <b>CanguPet</b> · Cuidado de mascotas a domicilio · v1.0.0
     </footer>
 
     <script src="opiniones.js" defer></script>
+
 </body>
+
 </html>
