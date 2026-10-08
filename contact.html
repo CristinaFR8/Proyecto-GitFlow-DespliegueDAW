@@ -4,11 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>CanguPet - Contact</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="estilos.css">
 </head>
 
 <body>
+
+    <div class="top-banner" id="topBanner">
+        <span>
+            <strong>¡Oferta CanguPet!</strong>
+            Consigue un 10% de descuento en tu primera reserva.
+        </span>
+
+        <button class="banner-close"
+            onclick="document.getElementById('topBanner').style.display='none'"
+            aria-label="Cerrar aviso">
+            ✕
+        </button>
+    </div>
 
     <header>
         <div class="bar">
@@ -24,6 +44,7 @@
                 <a href="index.html">INICIO</a>
                 <a href="servicio.html">SERVICIOS</a>
                 <a class="on" href="contact.html" aria-current="page">CONTACTO</a>
+                <a href="opiniones.html">OPINIONES</a>
                 <a href="articulo.html">ARTÍCULOS</a>
                 <a href="conocenos.html">CONÓCENOS</a>
                 <a href="cuenta.html">CUENTA</a>
@@ -33,14 +54,18 @@
     </header>
 
     <main>
+
         <div class="contact-page">
+
             <h2>FORMULARIO DE CONTACTO</h2>
 
             <div class="two-columns">
 
                 <!-- Left Column: The Form -->
                 <form action="#" method="post" class="form-side">
+
                     <input type="text" name="name" placeholder="TU NOMBRE" required>
+
                     <input type="email" name="email" placeholder="TU CORREO" required>
 
                     <div class="split-inputs">
@@ -50,19 +75,27 @@
                     <textarea name="message" rows="5" placeholder="TU MENSAJE" required></textarea>
 
                     <button type="submit">ENVIAR MENSAJE</button>
+
                 </form>
 
                 <!-- Right Column: The Info -->
                 <div class="info-side">
+
                     <p>
-                    ¿Tienes alguna pregunta o quieres ponerte en contacto con nosotros? Déjanos tus datos y tu mensaje, y nuestro equipo se pondrá en contacto contigo lo antes posible.
+                        ¿Tienes alguna pregunta o quieres ponerte en contacto con nosotros?
+                        Déjanos tus datos y tu mensaje, y nuestro equipo se pondrá en contacto
+                        contigo lo antes posible.
                     </p>
-                        <h4>+34 000 0123 3210</h4>
-                        <h4>+34 000 0456 3210</h4>
+
+                    <h4>+34 000 0123 3210</h4>
+                    <h4>+34 000 0456 3210</h4>
+
                 </div>
 
             </div>
+
         </div>
+
     </main>
 
     <footer>
