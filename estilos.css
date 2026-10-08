@@ -352,7 +352,11 @@ form {
 .servicio-card.hidden {
     display: none;
 }
-
+.subtitle {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 30px;
+}
 
 /* ----------------------------------------------------------------
    7. ARTÍCULOS
@@ -736,4 +740,212 @@ form {
     .mascota-card img {
         height: 240px;
     }
+}
+
+
+/* ----------------------------------------------------------------
+   10. BOTÓN VOLVER A INICIO
+   ---------------------------------------------------------------- */
+
+.volver-container {
+    display: flex;
+    align-items: center;
+}
+
+.btn-volver {
+    display: inline-block;
+    background-color: #B0D5A9;
+    color: #354535;
+    font-weight: bold;
+    font-size: 0.9rem;
+    padding: 8px 18px;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.btn-volver:hover {
+    background-color: #9ec597;
+    transform: scale(1.03);
+}
+
+
+/* ----------------------------------------------------------------
+   11. BANNER SUPERIOR
+   ---------------------------------------------------------------- */
+
+.top-banner {
+    background-color: #6B8E6B;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 8px 15px;
+    font-size: 0.88rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+}
+
+.top-banner span {
+    margin: 0 auto;
+}
+
+.banner-close {
+    position: absolute;
+    right: 15px;
+    background: transparent;
+    border: none;
+    color: #FFFFFF;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 0 5px;
+    line-height: 1;
+    transition: opacity 0.2s;
+}
+
+.banner-close:hover {
+    opacity: 0.7;
+}
+
+
+/* ----------------------------------------------------------------
+   12. ETIQUETAS
+   ---------------------------------------------------------------- */
+
+.servicio-card,
+.card,
+.articulo-card {
+    position: relative;
+    padding-top: 35px;
+}
+
+.badge {
+    position: absolute;
+    top: -10px;
+    right: 12px;
+    background-color: #B0D5A9;
+    color: #2c352a;
+    font-size: 0.72rem;
+    font-weight: 800;
+    padding: 4px 10px;
+    border-radius: 999px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+}
+
+/* ================================================================
+   SECCIÓN: OPINIONES / TESTIMONIOS
+   ================================================================ */
+
+.opiniones-main {
+    max-width: 1080px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.opiniones-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+    text-align: left;
+}
+
+.opinion-card {
+    background-color: #FFFFFF;
+    border: 2px solid #667663;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 10px rgba(102, 118, 99, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.opinion-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(102, 118, 99, 0.15);
+}
+
+.opinion-card .stars {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+}
+
+.opinion-card .comentario {
+    font-size: 0.95rem;
+    color: #444;
+    font-style: italic;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.autor-info {
+    border-top: 1px solid #E0E0E0;
+    padding-top: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.autor-nombre {
+    font-weight: bold;
+    color: #354535;
+    font-size: 0.95rem;
+}
+
+.mascota-tag {
+    font-size: 0.8rem;
+    color: #6B8E6B;
+    font-weight: 600;
+}
+
+.opinion-card.hidden {
+    display: none;
+}
+
+/* Formulario de opiniones */
+.nueva-opinion-section {
+    margin-top: 60px;
+    background-color: #FFFFFF;
+    border: 2px solid #667663;
+    border-radius: 16px;
+    padding: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.caja-opinion {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.caja-opinion label {
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: #354535;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.caja-opinion input, .caja-opinion textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #667663;
+    border-radius: 8px;
+    background-color: #FAF8F5;
+    font-family: inherit;
+    box-sizing: border-box;
+}
+
+.caja-opinion textarea {
+    resize: vertical;
 }
