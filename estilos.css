@@ -1,9 +1,10 @@
 /* ================================================================
-   estilos.css — Hoja de estilos unificada de CanguPet
+   estilos.css — Hoja de estilos de CanguPet
    ================================================================ */
 
+
 /* ----------------------------------------------------------------
-   1. ESTILOS GENERALES Y RESET
+   1. ESTILOS GENERALES
    ---------------------------------------------------------------- */
 
 * {
@@ -54,7 +55,7 @@ p {
 
 
 /* ----------------------------------------------------------------
-   2. CABECERA Y NAVEGACIÓN (COMPARTIDA)
+   2. CABECERA Y NAVEGACIÓN
    ---------------------------------------------------------------- */
 
 header,
@@ -123,7 +124,7 @@ nav a.active,
 
 
 /* ----------------------------------------------------------------
-   3. PIE DE PÁGINA (FOOTER)
+   3. FOOTER
    ---------------------------------------------------------------- */
 
 footer {
@@ -141,7 +142,7 @@ footer b {
 
 
 /* ----------------------------------------------------------------
-   4. SECCIÓN: INICIO (INDEX)
+   4. INICIO
    ---------------------------------------------------------------- */
 
 .hero {
@@ -154,11 +155,6 @@ footer b {
 
 .hero h1 {
     max-width: none;
-    margin-bottom: 1rem;
-}
-
-.hero h2 {
-    max-width: 700px;
     margin-bottom: 1rem;
 }
 
@@ -220,7 +216,7 @@ footer b {
 
 
 /* ----------------------------------------------------------------
-   5. SECCIÓN: CREAR CUENTA (REGISTRO)
+   5. CREAR CUENTA
    ---------------------------------------------------------------- */
 
 .registro-container {
@@ -281,7 +277,6 @@ form {
     border: 1px solid #667663;
     border-radius: 6px;
     font-size: 14px;
-    box-sizing: border-box;
     background-color: #faf8f5;
 }
 
@@ -305,7 +300,7 @@ form {
 
 
 /* ----------------------------------------------------------------
-   6. SECCIÓN: SERVICIOS
+   6. SERVICIOS
    ---------------------------------------------------------------- */
 
 .servicios-main {
@@ -364,7 +359,7 @@ form {
 }
 
 /* ----------------------------------------------------------------
-   7. SECCIÓN: ARTÍCULOS
+   7. ARTÍCULOS
    ---------------------------------------------------------------- */
 
 .articulos-main {
@@ -425,7 +420,7 @@ form {
 
 
 /* ----------------------------------------------------------------
-   8. SECCIÓN: CONTACTO (CONTACT US)
+   8. CONTACTO
    ---------------------------------------------------------------- */
 
 .contact-page {
@@ -434,7 +429,6 @@ form {
     border-radius: 12px;
     padding: 40px 5%;
     color: white;
-    box-sizing: border-box;
 }
 
 .contact-page h2 {
@@ -468,7 +462,6 @@ form {
     padding: 12px;
     border: none;
     border-radius: 6px;
-    box-sizing: border-box;
     font-family: inherit;
 }
 
@@ -481,7 +474,6 @@ form {
     cursor: pointer;
     align-self: flex-start;
     border-radius: 20px;
-    transition: background-color 0.2s;
 }
 
 .form-side button:hover {
@@ -495,10 +487,184 @@ form {
 
 
 /* ----------------------------------------------------------------
-   9. DISEÑO RESPONSIVO (MEDIA QUERIES)
+   9. CONÓCENOS
+   ---------------------------------------------------------------- */
+
+.conocenos-main {
+    max-width: 1000px;
+}
+
+
+/* INTRODUCCIÓN */
+
+.conocenos-intro {
+    background-color: #FFFFFF;
+    border-radius: 22px;
+    padding: 2.5rem 3rem;
+    margin-bottom: 2rem;
+    border-top: 6px solid #A8C3A0;
+    box-shadow: 0 4px 12px rgba(53, 69, 53, 0.08);
+}
+
+
+/* TÍTULO + LOGO */
+
+.conocenos-intro-cabecera {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 1.8rem;
+}
+
+.conocenos-intro-cabecera h1 {
+    margin: 0;
+}
+
+.conocenos-logo {
+    width: 100px;
+    height: auto;
+    display: block;
+}
+
+
+/* TEXTO + IMAGEN */
+
+.conocenos-intro-contenido {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 2.5rem;
+    align-items: center;
+}
+
+.conocenos-intro-texto {
+    display: flex;
+    flex-direction: column;
+}
+
+.conocenos-intro-texto p {
+    max-width: 100%;
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+.destacado {
+    font-size: 1.2rem;
+    color: #667663;
+    margin-bottom: 1.2rem !important;
+}
+
+
+/* IMAGEN */
+
+.conocenos-imagen {
+    width: 300px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 18px;
+    display: block;
+}
+
+
+/* DOS COLUMNAS */
+
+.conocenos-columnas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.conocenos-columnas section {
+    background-color: #FFFFFF;
+    border-radius: 22px;
+    padding: 2.2rem 2.5rem;
+    box-shadow: 0 4px 12px rgba(53, 69, 53, 0.08);
+}
+
+.conocenos-columnas h2 {
+    color: #6B8E6B;
+    margin-bottom: 1rem;
+}
+
+.conocenos-columnas p {
+    max-width: 100%;
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+.frase-final {
+    color: #6B8E6B;
+    margin-top: 1.5rem;
+}
+
+
+/* REX Y KOBU */
+
+.conocenos-mascotas {
+    background-color: #FFFFFF;
+    border-radius: 22px;
+    padding: 2.5rem 3rem;
+    box-shadow: 0 4px 12px rgba(53, 69, 53, 0.08);
+}
+
+.conocenos-mascotas > h2 {
+    color: #6B8E6B;
+    margin-bottom: 1rem;
+}
+
+.conocenos-mascotas > p {
+    max-width: 100%;
+    margin-bottom: 1.5rem;
+    text-align: justify;
+}
+
+.mascotas-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.mascota-card {
+    background-color: #F7F3EA;
+    border-radius: 18px;
+    overflow: hidden;
+    border-top: 5px solid #A8C3A0;
+}
+
+.mascota-card:nth-child(2) {
+    border-color: #B9A7C9;
+}
+
+.mascota-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    display: block;
+}
+
+.mascota-info {
+    padding: 1.3rem 1.5rem 1.5rem;
+}
+
+.mascota-info h3 {
+    color: #354535;
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+}
+
+.mascota-info p {
+    max-width: 100%;
+    margin: 0;
+    text-align: justify;
+}
+
+
+/* ----------------------------------------------------------------
+   10. RESPONSIVE
    ---------------------------------------------------------------- */
 
 @media (max-width: 760px) {
+
     .bar {
         justify-content: center;
     }
@@ -532,6 +698,47 @@ form {
     .caja input {
         width: 100%;
         margin-top: 5px;
+    }
+
+
+    /* CONÓCENOS */
+
+    .conocenos-intro,
+    .conocenos-columnas section,
+    .conocenos-mascotas {
+        padding: 1.5rem;
+    }
+
+    .conocenos-intro-cabecera {
+        gap: 1rem;
+    }
+
+    .conocenos-logo {
+        width: 80px;
+    }
+
+    .conocenos-intro-contenido {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .conocenos-imagen {
+        width: 100%;
+        height: 220px;
+    }
+
+    .conocenos-columnas {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .mascotas-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .mascota-card img {
+        height: 240px;
     }
 }
 
