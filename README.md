@@ -12,6 +12,25 @@ Proyecto colaborativo realizado para practicar Git, GitFlow, GitHub, GitHub Page
 * Astrid Molina
 * Abdullah Riaz
 
+## Estructura del proyecto
+
+Actualmente el proyecto contiene:
+
+- `index.html` — Página de inicio.
+- `conocenos.html` — Página Conócenos.
+- `servicio.html` — Página de servicios.
+- `contact.html` — Página de contacto.
+- `articulo.html` — Página de artículos.
+- `opiniones.html` — Página de opiniones.
+- `cuenta.html` — Página de creación de cuenta.
+- `estilos.css` — Hoja de estilos común.
+- `imagenes/` — Imágenes y recursos gráficos del proyecto.
+- `script.js` — JavaScript general del proyecto.
+- `servicios.js` — JavaScript relacionado con la lógica de los servicios.
+- `opiniones.js` — JavaScript para el filtrado y envío de reseñas.
+- `README.md` — Documentación del proyecto.
+- `.gitignore` — Archivos excluidos del control de versiones.
+
 ## Tecnologías
 
 * HTML5
@@ -41,23 +60,6 @@ Las versiones preparadas mediante `release/*` se incorporan a `main` y `develop`
 
 Las correcciones urgentes mediante `hotfix/*` se incorporan a `main` y `develop` mediante Pull Requests.
 
-## Estructura del proyecto
-
-Actualmente el proyecto contiene:
-
-* `index.html` — Página de inicio.
-* `conocenos.html` — Página Conócenos.
-* `servicio.html` — Página de servicios.
-* `contact.html` — Página de contacto.
-* `articulo.html` — Página de artículos.
-* `cuenta.html` — Página de creación de cuenta.
-* `estilos.css` — Hoja de estilos común.
-* `imagenes/` — Imágenes y recursos gráficos del proyecto.
-* `scrip.js` — JavaScript del proyecto.
-* `servicios.js` — JavaScript relacionado con los servicios.
-* `README.md` — Documentación del proyecto.
-* `.gitignore` — Archivos excluidos del control de versiones.
-
 ## Despliegue
 
 El proyecto se publica mediante GitHub Pages desde la rama `main`.
@@ -74,8 +76,20 @@ Primera versión estable publicada de CanguPet.
 Incluye las páginas y funcionalidades completadas durante la primera sesión de desarrollo y publicadas mediante GitHub Pages.
 
 **Tag:** `v1.0.0`
+### v2.0.0
+
+Segunda versión publicada de CanguPet con mejoras visuales e interactivas.
+
+- Rediseño e integración de botones de retorno al inicio.
+- Implementación del banner superior de ofertas y avisos interactivo.
+- Incorporación de etiquetas (badges) flotantes para destacar servicios.
+- Botón flotante de contacto/asistencia directa.
+- Creación de la vista e interactividad para la sección de Opiniones (`opiniones.html`).
+
+**Tag:** `v2.0.0`
 
 ## Incidencias y correcciones
+### v1
 
 Durante el desarrollo se realizaron correcciones y ajustes mediante ramas y Pull Requests.
 
@@ -84,6 +98,11 @@ Entre las correcciones realizadas para la primera versión se encuentran:
 * Corrección de la estructura HTML de `index.html`.
 * Corrección del enlace hacia la página de contacto.
 * Inclusión de la versión `v1.0.0` en el pie de página.
+
+### v2
+- Resolución de conflictos en la hoja de estilos compartida `estilos.css` entre ramas.
+- Corrección de rutas de navegación en el menú del `header`.
+- Ajuste de posicionamiento CSS en los badges de las tarjetas para evitar el solapamiento con los títulos.
 
 ## Kanban
 
