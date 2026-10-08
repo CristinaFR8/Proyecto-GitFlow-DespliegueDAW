@@ -1,63 +1,162 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>CanguPet - Artículos y Consejos</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="estilos.css">
 </head>
+
 <body>
+
+    <div class="top-banner" id="topBanner">
+        <span>
+            <strong>¡Oferta CanguPet!</strong>
+            Consigue un 10% de descuento en tu primera reserva.
+        </span>
+
+        <button class="banner-close"
+            onclick="document.getElementById('topBanner').style.display='none'"
+            aria-label="Cerrar aviso">
+            ✕
+        </button>
+    </div>
+
+    <header>
+        <div class="bar">
+
+            <a class="brand" href="index.html">
+                <img src="imagenes/cangupet-frase.svg"
+                    alt="CanguPet, cuidado de mascotas a domicilio"
+                    width="240"
+                    height="76">
+            </a>
+
+            <nav aria-label="Principal">
+                <a href="index.html">INICIO</a>
+                <a href="servicio.html">SERVICIOS</a>
+                <a href="contact.html">CONTACTO</a>
+                <a href="opiniones.html">OPINIONES</a>
+                <a class="on" href="articulo.html" aria-current="page">ARTÍCULOS</a>
+                <a href="conocenos.html">CONÓCENOS</a>
+                <a href="cuenta.html">CUENTA</a>
+            </nav>
+
+        </div>
+    </header>
+
     <main class="articulos-main">
+
         <h1>Artículos y Consejos de Interés</h1>
-        <p class="subtitle">Aprende todo lo necesario para el bienestar, salud y felicidad de tu compañero de cuatro patas.</p>
+
+        <p class="subtitle">
+            Aprende todo lo necesario para el bienestar, salud y felicidad de tu compañero de cuatro patas.
+        </p>
 
         <!-- Contenedor Grid de Artículos -->
+
         <div class="articulos-container">
-            
+
             <article class="articulo-card">
                 <div class="articulo-content">
+
                     <h3>5 consejos para el cuidado diario</h3>
-                    <p>Descubre pautas esenciales y rutinas recomendadas para mantener a tu mascota activa y saludable.</p>
-                    <a href="#" class="leer-mas">Leer artículo completo &rarr;</a>
+
+                    <p>
+                        Descubre pautas esenciales y rutinas recomendadas para mantener a tu mascota activa y saludable.
+                    </p>
+
+                    <a href="#" class="leer-mas">
+                        Leer artículo completo &rarr;
+                    </a>
+
                 </div>
             </article>
 
             <article class="articulo-card">
                 <div class="articulo-content">
+
                     <h3>Protectora de animales</h3>
-                    <p>Conoce de cerca la labor de las protectoras y descubre cómo puedes colaborar mediante adopciones o voluntariado.</p>
-                    <a href="#" class="leer-mas">Leer artículo completo &rarr;</a>
+
+                    <p>
+                        Conoce de cerca la labor de las protectoras y descubre cómo puedes colaborar mediante adopciones o voluntariado.
+                    </p>
+
+                    <a href="#" class="leer-mas">
+                        Leer artículo completo &rarr;
+                    </a>
+
                 </div>
             </article>
 
             <article class="articulo-card">
                 <div class="articulo-content">
+
                     <h3>Alimentación para conejos</h3>
-                    <p>Guía especializada sobre qué alimentos frescos y forrajes son ideales para su digestión y cuáles debes evitar.</p>
-                    <a href="#" class="leer-mas">Leer artículo completo &rarr;</a>
+
+                    <p>
+                        Guía especializada sobre qué alimentos frescos y forrajes son ideales para su digestión y cuáles debes evitar.
+                    </p>
+
+                    <a href="#" class="leer-mas">
+                        Leer artículo completo &rarr;
+                    </a>
+
                 </div>
             </article>
 
             <article class="articulo-card">
                 <div class="articulo-content">
+
                     <h3>Viaje seguro con mascotas</h3>
-                    <p>Consejos prácticos, normativas de transporte y elementos de sujeción para viajar de forma segura en coche.</p>
-                    <a href="#" class="leer-mas">Leer artículo completo &rarr;</a>
+
+                    <p>
+                        Consejos prácticos, normativas de transporte y elementos de sujeción para viajar de forma segura en coche.
+                    </p>
+
+                    <a href="#" class="leer-mas">
+                        Leer artículo completo &rarr;
+                    </a>
+
                 </div>
             </article>
 
             <article class="articulo-card">
                 <div class="articulo-content">
+
                     <h3>Alimentos y materiales recomendados</h3>
-                    <p>Un repaso detallado por los mejores accesorios, juguetes interactivos y productos básicos de calidad.</p>
-                    <a href="#" class="leer-mas">Leer artículo completo &rarr;</a>
+
+                    <p>
+                        Un repaso detallado por los mejores accesorios, juguetes interactivos y productos básicos de calidad.
+                    </p>
+
+                    <a href="#" class="leer-mas">
+                        Leer artículo completo &rarr;
+                    </a>
+
                 </div>
             </article>
 
         </div>
+
     </main>
 
+    <footer>
+        © 2026 <b>CanguPet</b> · Cuidado de mascotas a domicilio · v1.0.0
+    </footer>
+
     <!-- Script para interactividad -->
+
     <script src="articulos.js" defer></script>
+
 </body>
+
 </html>
