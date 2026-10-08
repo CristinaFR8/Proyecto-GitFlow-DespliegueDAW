@@ -624,3 +624,117 @@ form {
     letter-spacing: 0.5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
 }
+
+/* ================================================================
+   SECCIÓN: OPINIONES / TESTIMONIOS
+   ================================================================ */
+
+.opiniones-main {
+    max-width: 1080px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.opiniones-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+    text-align: left;
+}
+
+.opinion-card {
+    background-color: #FFFFFF;
+    border: 2px solid #667663;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 10px rgba(102, 118, 99, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.opinion-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(102, 118, 99, 0.15);
+}
+
+.opinion-card .stars {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+}
+
+.opinion-card .comentario {
+    font-size: 0.95rem;
+    color: #444;
+    font-style: italic;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.autor-info {
+    border-top: 1px solid #E0E0E0;
+    padding-top: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.autor-nombre {
+    font-weight: bold;
+    color: #354535;
+    font-size: 0.95rem;
+}
+
+.mascota-tag {
+    font-size: 0.8rem;
+    color: #6B8E6B;
+    font-weight: 600;
+}
+
+.opinion-card.hidden {
+    display: none;
+}
+
+/* Formulario de opiniones */
+.nueva-opinion-section {
+    margin-top: 60px;
+    background-color: #FFFFFF;
+    border: 2px solid #667663;
+    border-radius: 16px;
+    padding: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.caja-opinion {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.caja-opinion label {
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: #354535;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.caja-opinion input, .caja-opinion textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #667663;
+    border-radius: 8px;
+    background-color: #FAF8F5;
+    font-family: inherit;
+    box-sizing: border-box;
+}
+
+.caja-opinion textarea {
+    resize: vertical;
+}
